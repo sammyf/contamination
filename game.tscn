@@ -1,0 +1,451 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://default_font.tres" type="DynamicFont" id=1]
+[ext_resource path="res://percent_slide.gd" type="Script" id=2]
+[ext_resource path="res://setTextToSliderValue.gd" type="Script" id=3]
+[ext_resource path="res://default_font_small.tres" type="DynamicFont" id=4]
+[ext_resource path="res://raw/corona-virus-1585192969fxl.png" type="Texture" id=5]
+[ext_resource path="res://whitrabt.ttf" type="DynamicFontData" id=6]
+[ext_resource path="res://game.gd" type="Script" id=7]
+
+[sub_resource type="DynamicFont" id=2]
+size = 75
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=1]
+size = 18
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 6 )
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 7 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+script = ExtResource( 2 )
+
+[node name="lbl_virulence" type="Label" parent="CanvasLayer"]
+margin_left = 800.0
+margin_top = 233.0
+margin_right = 887.0
+margin_bottom = 272.0
+custom_fonts/font = ExtResource( 1 )
+text = "70"
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="lbl_symptomatism" type="Label" parent="CanvasLayer"]
+margin_left = 800.0
+margin_top = 322.0
+margin_right = 887.0
+margin_bottom = 361.0
+custom_fonts/font = ExtResource( 1 )
+text = "50"
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="lbl_protection" type="Label" parent="CanvasLayer"]
+margin_left = 800.0
+margin_top = 417.0
+margin_right = 887.0
+margin_bottom = 456.0
+custom_fonts/font = ExtResource( 1 )
+text = "90"
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="lbl_idiots" type="Label" parent="CanvasLayer"]
+margin_left = 1512.0
+margin_top = 277.0
+margin_right = 1599.0
+margin_bottom = 316.0
+custom_fonts/font = ExtResource( 1 )
+text = "79"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="lbl_infected" type="Label" parent="CanvasLayer"]
+margin_left = 1512.0
+margin_top = 325.0
+margin_right = 1599.0
+margin_bottom = 364.0
+custom_fonts/font = ExtResource( 1 )
+text = "1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="lbl_vaxxed" type="Label" parent="CanvasLayer"]
+margin_left = 1512.0
+margin_top = 381.0
+margin_right = 1599.0
+margin_bottom = 420.0
+custom_fonts/font = ExtResource( 1 )
+text = "20"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label_help" type="Label" parent="CanvasLayer"]
+margin_left = 144.0
+margin_top = 229.0
+margin_right = 396.0
+margin_bottom = 268.0
+custom_fonts/font = ExtResource( 1 )
+text = "virulence"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label_help2" type="Label" parent="CanvasLayer"]
+margin_left = 144.0
+margin_top = 325.0
+margin_right = 396.0
+margin_bottom = 364.0
+custom_fonts/font = ExtResource( 1 )
+text = "symptoms"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label_help3" type="Label" parent="CanvasLayer"]
+margin_left = 144.0
+margin_top = 413.0
+margin_right = 396.0
+margin_bottom = 452.0
+custom_fonts/font = ExtResource( 1 )
+text = "vaccine"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label_help4" type="Label" parent="CanvasLayer"]
+margin_left = 1024.0
+margin_top = 189.0
+margin_right = 1304.0
+margin_bottom = 228.0
+custom_fonts/font = ExtResource( 1 )
+text = "population"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label_help5" type="Label" parent="CanvasLayer"]
+margin_left = 64.0
+margin_top = 579.0
+margin_right = 485.0
+margin_bottom = 618.0
+custom_fonts/font = ExtResource( 1 )
+text = "days contagious"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label_help6" type="Label" parent="CanvasLayer"]
+margin_left = 64.0
+margin_top = 635.0
+margin_right = 485.0
+margin_bottom = 674.0
+custom_fonts/font = ExtResource( 1 )
+text = "days to heal"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label_help7" type="Label" parent="CanvasLayer"]
+margin_left = 64.0
+margin_top = 699.0
+margin_right = 513.0
+margin_bottom = 738.0
+custom_fonts/font = ExtResource( 1 )
+text = "days innoculated"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="CanvasLayer"]
+margin_left = 658.0
+margin_top = 24.0
+margin_right = 1228.0
+margin_bottom = 82.0
+custom_fonts/font = SubResource( 2 )
+text = "CONTAMINATION"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label_help8" type="Label" parent="CanvasLayer"]
+margin_left = 928.0
+margin_top = 579.0
+margin_right = 1491.0
+margin_bottom = 618.0
+custom_fonts/font = ExtResource( 1 )
+text = "vaxx healing factor "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label_help9" type="Label" parent="CanvasLayer"]
+margin_left = 928.0
+margin_top = 643.0
+margin_right = 1491.0
+margin_bottom = 682.0
+custom_fonts/font = ExtResource( 1 )
+text = "vaxx symptom factor "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label_small_help10" type="Label" parent="CanvasLayer"]
+margin_left = 944.0
+margin_top = 260.0
+margin_right = 1507.0
+margin_bottom = 299.0
+custom_fonts/font = ExtResource( 4 )
+text = "Initially not-infected, not-vaccinated"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label_small_help11" type="Label" parent="CanvasLayer"]
+margin_left = 944.0
+margin_top = 312.0
+margin_right = 1507.0
+margin_bottom = 351.0
+custom_fonts/font = ExtResource( 4 )
+text = "Initially infected"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label_small_help12" type="Label" parent="CanvasLayer"]
+margin_left = 944.0
+margin_top = 371.0
+margin_right = 1507.0
+margin_bottom = 410.0
+custom_fonts/font = ExtResource( 4 )
+text = "Initially vaccinated"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label_small_help13" type="Label" parent="CanvasLayer"]
+margin_left = 1315.0
+margin_top = 1059.0
+margin_right = 2012.0
+margin_bottom = 1098.0
+custom_fonts/font = SubResource( 1 )
+text = "(c) 2021 Sammy Fischer. Just fork it :P"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label_small_help14" type="Label" parent="CanvasLayer"]
+margin_left = 365.0
+margin_top = 987.0
+margin_right = 1666.0
+margin_bottom = 1026.0
+custom_fonts/font = ExtResource( 4 )
+text = "I give absolutely no guarantee that this programm is even remotely scientifically accurate."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label_small_help15" type="Label" parent="CanvasLayer"]
+margin_left = 1009.0
+margin_top = 89.0
+margin_right = 2310.0
+margin_bottom = 128.0
+custom_fonts/font = ExtResource( 4 )
+text = "by Sammy Fischer"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VIRULENCE" type="HSlider" parent="CanvasLayer"]
+margin_left = 419.0
+margin_top = 210.0
+margin_right = 787.0
+margin_bottom = 297.0
+hint_tooltip = "How high is the probability for an unvaccinated patient to catch the virus  in case of contact."
+value = 70.0
+tick_count = 10
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SYMPTOMATISM" type="HSlider" parent="CanvasLayer"]
+margin_left = 415.0
+margin_top = 301.0
+margin_right = 783.0
+margin_bottom = 388.0
+hint_tooltip = "Probability for an unvaccinated patient to develop serious symptoms upon being infected."
+value = 50.0
+tick_count = 10
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VAXX_PROTECTION" type="HSlider" parent="CanvasLayer"]
+margin_left = 415.0
+margin_top = 392.0
+margin_right = 783.0
+margin_bottom = 479.0
+hint_tooltip = "effectivity of the vaccine."
+value = 90.0
+tick_count = 10
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PERCENT_VAXXED" type="HSlider" parent="CanvasLayer"]
+margin_left = 1122.0
+margin_top = 360.0
+margin_right = 1490.0
+margin_bottom = 447.0
+hint_tooltip = "Initial percentage of vaccinated patients."
+value = 20.0
+tick_count = 10
+ticks_on_borders = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PERCENT_INFECTED" type="HSlider" parent="CanvasLayer"]
+margin_left = 1122.0
+margin_top = 302.0
+margin_right = 1490.0
+margin_bottom = 389.0
+hint_tooltip = "initial percentage of infected patients."
+value = 1.0
+tick_count = 10
+ticks_on_borders = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PERCENT_IDIOTS" type="HSlider" parent="CanvasLayer"]
+margin_left = 1123.0
+margin_top = 253.0
+margin_right = 1491.0
+margin_bottom = 340.0
+hint_tooltip = "Initial percentage of unvaccinated, non-infected patients."
+value = 79.0
+tick_count = 10
+ticks_on_borders = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="COUNT" type="TextEdit" parent="CanvasLayer"]
+margin_left = 1325.0
+margin_top = 190.0
+margin_right = 1513.0
+margin_bottom = 235.0
+hint_tooltip = "Population size"
+custom_fonts/font = ExtResource( 1 )
+text = "4000"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TIME_OF_VIRULENCE" type="TextEdit" parent="CanvasLayer"]
+margin_left = 522.0
+margin_top = 574.0
+margin_right = 662.0
+margin_bottom = 621.0
+hint_tooltip = "Amount of units (days for example) during which transmission of the virus is possible"
+custom_fonts/font = ExtResource( 1 )
+text = "5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TIME_TO_HEAL" type="TextEdit" parent="CanvasLayer"]
+margin_left = 522.0
+margin_top = 630.0
+margin_right = 666.0
+margin_bottom = 679.0
+hint_tooltip = "Average amount of units (days for example) after transmission stopped being possible during which symptoms (if they appeared) lingers. It is assumed that the condition of the patient worsens gradually over that time period.
+"
+custom_fonts/font = ExtResource( 1 )
+text = "20"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TIME_OF_INNOCULATION" type="TextEdit" parent="CanvasLayer"]
+margin_left = 528.0
+margin_top = 694.0
+margin_right = 667.0
+margin_bottom = 745.0
+hint_tooltip = "Average amount of units (days for example) after transmission stopped being possible during which a natural innoculation is in effect. It is assumed that that innoculation works 100% and an innoculated patient can not, during that time, be infected again.
+"
+custom_fonts/font = ExtResource( 1 )
+text = "60"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VAXX_HEALING_RATE" type="TextEdit" parent="CanvasLayer"]
+margin_left = 1502.0
+margin_top = 574.0
+margin_right = 1585.0
+margin_bottom = 619.0
+hint_tooltip = "Factor by which vaccination speeds up the healing process"
+custom_fonts/font = ExtResource( 1 )
+text = "2"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VAXX_SYMPTOM_FACTOR" type="TextEdit" parent="CanvasLayer"]
+margin_left = 1499.0
+margin_top = 638.0
+margin_right = 1585.0
+margin_bottom = 683.0
+hint_tooltip = "Factor by which vaccination reduces the chances of symptoms
+"
+custom_fonts/font = ExtResource( 1 )
+text = "2"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="START" type="Button" parent="CanvasLayer"]
+margin_left = 866.0
+margin_top = 857.0
+margin_right = 1184.0
+margin_bottom = 943.0
+custom_fonts/font = ExtResource( 1 )
+text = "START"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0.156863 )
+position = Vector2( 957, 534 )
+z_index = -1000
+texture = ExtResource( 5 )
+
+[connection signal="value_changed" from="CanvasLayer/VIRULENCE" to="CanvasLayer/lbl_virulence" method="_on_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/SYMPTOMATISM" to="CanvasLayer/lbl_symptomatism" method="_on_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/VAXX_PROTECTION" to="CanvasLayer/lbl_protection" method="_on_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/PERCENT_VAXXED" to="CanvasLayer" method="_on_PERCENT_VAXXED_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/PERCENT_INFECTED" to="CanvasLayer" method="_on_PERCENT_INFECTED_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/PERCENT_IDIOTS" to="CanvasLayer" method="_on_PERCENT_IDIOTS_value_changed"]
+[connection signal="button_up" from="CanvasLayer/START" to="." method="_on_Button_button_up"]
