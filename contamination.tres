@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://defaults.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+virulence = 80.0
+symptomatism = 51.0
+vaxx_protection = 94.0
+pctVaxxed = 62.0
+pctInfected = 37.0
+count = 2000
+tov = 5
+tth = 20
+tti = 60
+vaxx_healrate = 1.3
+vaxx_symptoms = 1.5

@@ -57,12 +57,23 @@ shape = SubResource( 1 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
+[node name="Panel" type="Panel" parent="CanvasLayer"]
+modulate = Color( 0.619608, 0.705882, 1, 0.470588 )
+light_mask = 0
+margin_left = 17.0
+margin_top = 20.0
+margin_right = 343.0
+margin_bottom = 124.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="counter" type="RichTextLabel" parent="CanvasLayer"]
 margin_left = 27.0
 margin_top = 30.0
 margin_right = 756.0
 margin_bottom = 144.0
-custom_colors/default_color = Color( 1, 1, 1, 0.819608 )
+custom_colors/default_color = Color( 1, 1, 1, 1 )
 custom_fonts/normal_font = SubResource( 2 )
 text = "death : 0"
 scroll_active = false

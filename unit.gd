@@ -30,13 +30,14 @@ enum {				VIRULENT,   VIRULENT_VAXXED, INFECTED,     VAXXED,         HEALED,  IN
 var unitColors = [Color(1,0,0), Color(1,0.5,0), Color(1,1,0), Color(0,1,0), Color(1,0,1), Color(0,1,1), Color(0,0,1), Color(1,1,1), Color(0,0,0.4,0.3)]
 onready var visual = get_node("visual")
 
+var capColors = [Color(0.5,0,0.9,1), Color(0,0.8,0.3,1)]
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	life = rand_range(5,100)
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	
+func _process(delta):	
 	#dead
 	if life <= 0:
 		return
@@ -100,7 +101,7 @@ func _process(delta):
 	elif vaccinated:
 		c=VAXXED		
 	visual.modulate = Color(unitColors[c].r*colorScale, unitColors[c].g*colorScale, unitColors[c].b*colorScale)
-	
+	get_node("cap").modulate=unitColors[c]
 #	if rand_range(0,1000) < 10:
 #		set_axis_velocity(Vector2(0,0))
 #		add_force(Vector2(rand_range(-1.0,1.0), rand_range(-1.0,1.0)), Vector2(rand_range(-0.5,0.5), rand_range(-0.5,0.5)))
@@ -110,6 +111,7 @@ func is_vaccinated(protection):
 	vaccineStrength = vaxxProtection
 	vaxxSymptomFactor = VAXX_SYMPTOM_FACTOR
 	vaxxHealingRate = VAXX_HEALING_RATE
+	get_node("cap").modulate = capColors[1]
 	vaccinated = true
 #
 #func is_healed():

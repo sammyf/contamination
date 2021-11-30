@@ -404,8 +404,8 @@ __meta__ = {
 [node name="VAXX_HEALING_RATE" type="TextEdit" parent="CanvasLayer"]
 margin_left = 1502.0
 margin_top = 574.0
-margin_right = 1585.0
-margin_bottom = 619.0
+margin_right = 1610.0
+margin_bottom = 623.0
 hint_tooltip = "Factor by which vaccination speeds up the healing process"
 custom_fonts/font = ExtResource( 1 )
 text = "2"
@@ -416,8 +416,8 @@ __meta__ = {
 [node name="VAXX_SYMPTOM_FACTOR" type="TextEdit" parent="CanvasLayer"]
 margin_left = 1499.0
 margin_top = 638.0
-margin_right = 1585.0
-margin_bottom = 683.0
+margin_right = 1613.0
+margin_bottom = 687.0
 hint_tooltip = "Factor by which vaccination reduces the chances of symptoms
 "
 custom_fonts/font = ExtResource( 1 )

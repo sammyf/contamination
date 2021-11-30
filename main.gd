@@ -1,11 +1,11 @@
 extends Node2D
 
-const VERSION = '1.1\nBand-Maid rocks btw, no matter what Beato said.'
+const VERSION = '1.2\nBand-Maid rocks btw, no matter what Beato said.'
 
 const KEY_TIMEOUT = 0.3
 var keyDelay = 0.0
 
-var COUNT = 4000
+var COUNT = 2000
 var INITIAL_VIRULENCE = 70
 var TIME_OF_VIRULENCE  = 5
 var INITIAL_TIME_TO_HEAL = 20 #seconds
@@ -13,12 +13,12 @@ var INNOCULATION_TIME = 60 # seconds until healed are not safe anymore
 var INITIAL_SYMPTOMATISM = 50 # chances to develop symptoms
 var MUTABILITY = 5
 
-var VAXX_PROTECTION = 90
-var VAXX_HEALING_RATE = 2.0
-var VAXX_SYMPTOM_FACTOR = 2.0
+var VAXX_PROTECTION = 95
+var VAXX_HEALING_RATE = 1.2
+var VAXX_SYMPTOM_FACTOR = 1.4
 
-var PERCENT_VACCINATED = 20
-var PERCENT_INFECTED = 1
+var PERCENT_VACCINATED = 50
+var PERCENT_INFECTED = 30
 
 var units:Array
 var unitScene = preload("res://unit.tscn")
@@ -62,6 +62,7 @@ func init():
 			iCount += 1
 			infectCounter += 1
 			u.get_infected(INITIAL_VIRULENCE, INITIAL_TIME_TO_HEAL, INITIAL_SYMPTOMATISM, INNOCULATION_TIME, TIME_OF_VIRULENCE, MUTABILITY)
+			u.timeOfVirulence = rand_range(1,INITIAL_VIRULENCE)
 			
 		u.position = Vector2(rand_range(50,1870),rand_range(50,1000))
 		u.add_force(Vector2(rand_range(-1.0,1.0), rand_range(-1.0,1.0)), Vector2(rand_range(-5,5), rand_range(-5,5)))
