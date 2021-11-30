@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://default_font.tres" type="DynamicFont" id=1]
 [ext_resource path="res://percent_slide.gd" type="Script" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://raw/corona-virus-1585192969fxl.png" type="Texture" id=5]
 [ext_resource path="res://whitrabt.ttf" type="DynamicFontData" id=6]
 [ext_resource path="res://game.gd" type="Script" id=7]
+[ext_resource path="res://raw/ccby.png" type="Texture" id=8]
 
 [sub_resource type="DynamicFont" id=2]
 size = 75
@@ -441,6 +442,10 @@ modulate = Color( 1, 1, 1, 0.156863 )
 position = Vector2( 957, 534 )
 z_index = -1000
 texture = ExtResource( 5 )
+
+[node name="cc-by" type="Sprite" parent="."]
+position = Vector2( 62, 1048 )
+texture = ExtResource( 8 )
 
 [connection signal="value_changed" from="CanvasLayer/VIRULENCE" to="CanvasLayer/lbl_virulence" method="_on_value_changed"]
 [connection signal="value_changed" from="CanvasLayer/SYMPTOMATISM" to="CanvasLayer/lbl_symptomatism" method="_on_value_changed"]
